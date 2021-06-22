@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('checkout') {
       steps {
-        git(url: 'https://github.com/brmdev-2020/jenkins-test.git', branch: 'main', poll: true, changelog: true)
+        git(url: 'https://github.com/brmdev-2020/jenkins-test.git', poll: true, changelog: true)
       }
     }
 
